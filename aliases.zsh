@@ -9,3 +9,10 @@ alias needsreview='arc list | grep -oE '\''D.+'\'' | awk -F '\'': '\'' '\''{prin
 
 # Git+Bazel
 alias gbr="git-bzl refresh"
+
+# Personal
+if [ -z "$EDITOR" ]; then
+    export EDITOR="vi"
+fi
+alias zshconfig="${EDITOR} ~/.zshrc"
+alias ohmyzsh="${EDITOR} ~/.oh-my-zsh"
